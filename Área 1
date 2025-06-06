@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Monitoramento da Área 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Monitoramento da Área 1</h1>
+    <p>Monitoramento feito no dia 03/06/2025.<br>
+    Nenhum risco detectado. Área preservada e saudável.</p>
+    <img src="floresta-saudavel.jpg" alt="Área 1" style="max-width: 100%;">
+    <br><br>
+    <a href="index.html" class="botao">Voltar para o site principal</a>
+</body>
+</html>
