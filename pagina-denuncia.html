@@ -1,38 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Denúncia Rápida</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container" style="flex-direction: column; align-items: flex-start; padding: 40px; max-width: 600px; margin: auto;">
     <h1>Denúncia Rápida</h1>
     <p class="descricao-monitoramento">
-      Utilize este formulário para registrar uma denúncia anônima sobre possíveis crimes ambientais, como desmatamento ou incêndio ilegal. Seus dados não serão compartilhados.
+      Utilize este formulário para registrar uma denúncia anônima sobre possíveis crimes ambientais.
     </p>
 
-    <form action="#" method="post" style="width: 100%; display: flex; flex-direction: column; gap: 15px;">
+    <!-- Simulação de envio com JavaScript -->
+    <form id="formDenuncia" style="width: 100%; display: flex; flex-direction: column; gap: 15px;" onsubmit="enviarDenuncia(event)">
       <label for="local">Local do ocorrido:</label>
-      <input type="text" id="local" name="local" required placeholder="Ex: Área rural, próximo ao km 12">
+      <input type="text" id="local" name="local" required placeholder="Ex: Próximo à rodovia PR-435, Km 12" />
 
       <label for="data">Data do ocorrido:</label>
-      <input type="date" id="data" name="data" required>
+      <input type="date" id="data" name="data" required />
 
-      <label for="descricao">Descrição da situação:</label>
-      <textarea id="descricao" name="descricao" rows="5" placeholder="Descreva o que aconteceu..." required></textarea>
+      <label for="descricao">Descrição:</label>
+      <textarea id="descricao" name="descricao" rows="5" required placeholder="Descreva o que foi visto..."></textarea>
 
       <button type="submit" class="botao alerta-grave">Enviar denúncia</button>
     </form>
 
-    <br>
+    <p id="mensagem-sucesso" style="display: none; margin-top: 20px; color: green; font-weight: bold;">
+      ✅ Sua denúncia foi registrada com sucesso!
+    </p>
+
+    <br />
     <a href="index.html" class="botao">Voltar ao menu principal</a>
   </div>
 
   <footer>
     <p>&copy; 2025 - Projeto Agrinho | Canal de denúncia anônima BIODRONE</p>
   </footer>
+
+  <!-- Simulação de envio -->
+  <script>
+    function enviarDenuncia(event) {
+      event.preventDefault(); // impede recarregamento da página
+      document.getElementById('formDenuncia').style.display = 'none';
+      document.getElementById('mensagem-sucesso').style.display = 'block';
+    }
+  </script>
 </body>
 </html>
+
 
