@@ -1,30 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Relatório do Drone</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container" style="flex-direction: column; align-items: flex-start; padding: 40px; max-width: 700px; margin: auto;">
-    <h1>Relatório do Drone</h1>
+  <div class="container" style="flex-direction: column; align-items: flex-start; padding: 40px; max-width: 800px; margin: auto;">
+    <h1>Relatório do Drone - Monitoramento Ambiental</h1>
+
     <p class="descricao-monitoramento">
-      Últimos registros de voo e análises feitas pelo sistema BIODRONE:
+      Abaixo estão os dados gerados automaticamente a partir das imagens e sensores embarcados no BIODRONE. Estes relatórios auxiliam na tomada de decisão rápida diante de ocorrências ambientais.
     </p>
-    <ul>
-      <li><strong>Área 1:</strong> Monitoramento em 03/06/2025 — Nenhuma anomalia detectada.</li>
-      <li><strong>Área 2:</strong> Alerta de fumaça e veículo suspeito — 14/06/2025.</li>
-      <li><strong>Área 3:</strong> Desmatamento grave identificado com 4 máquinas — Sinal perdido às 11:15.</li>
-    </ul>
-    <br>
+
+    <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+      <thead>
+        <tr style="background-color: #c9a738; color: white;">
+          <th style="padding: 10px; border: 1px solid #ddd;">Área</th>
+          <th style="padding: 10px; border: 1px solid #ddd;">Data</th>
+          <th style="padding: 10px; border: 1px solid #ddd;">Situação</th>
+          <th style="padding: 10px; border: 1px solid #ddd;">Ação Tomada</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ddd;">Área 1</td>
+          <td>03/06/2025</td>
+          <td>Floresta preservada</td>
+          <td>Monitoramento completo sem ocorrências</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ddd;">Área 2</td>
+          <td>14/06/2025</td>
+          <td>Início de incêndio detectado</td>
+          <td>Acionamento dos bombeiros locais</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ddd;">Área 3</td>
+          <td>14/06/2025</td>
+          <td>Desmatamento em grande escala</td>
+          <td>Relatório enviado às autoridades ambientais</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
     <a href="index.html" class="botao">Voltar ao menu principal</a>
   </div>
+
   <footer>
-    <p>&copy; 2025 - Projeto Agrinho | Dados de campo - BIODRONE</p>
+    <p>&copy; 2025 - Projeto Agrinho | BIODRONE Monitoramento Ambiental</p>
   </footer>
 </body>
 </html>
+
 
 
 
