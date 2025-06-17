@@ -3,42 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Área 3 - Monitoramento</title>
+  <title>Denúncia Rápida</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container" style="flex-direction: column; align-items: flex-start; padding: 40px;">
-    <div class="logo">
-      <img src="logo-projeto.png" alt="Logo do BIODRONE" style="max-width: 120px;">
-    </div>
-
-    <h1>Monitoramento - Área 3</h1>
-
+  <div class="container" style="flex-direction: column; align-items: flex-start; padding: 40px; max-width: 600px; margin: auto;">
+    <h1>Denúncia Rápida</h1>
     <p class="descricao-monitoramento">
-      <strong>Data:</strong> 14/06/2025<br><br>
-      <strong>Descrição: ALERTA (GRAVE)</strong><br>
-      A Área 3 apresenta alto risco ambiental. Foi identificado um desmatamento em larga escala com a presença de 4 máquinas de grande porte atuando de forma ilegal. A região devastada apresenta um formato quadrado, indicando planejamento na ação criminosa.
+      Utilize este formulário para registrar uma denúncia anônima sobre possíveis crimes ambientais, como desmatamento ou incêndio ilegal. Seus dados não serão compartilhados.
     </p>
 
+    <form action="#" method="post" style="width: 100%; display: flex; flex-direction: column; gap: 15px;">
+      <label for="local">Local do ocorrido:</label>
+      <input type="text" id="local" name="local" required placeholder="Ex: Área rural, próximo ao km 12">
+
+      <label for="data">Data do ocorrido:</label>
+      <input type="date" id="data" name="data" required>
+
+      <label for="descricao">Descrição da situação:</label>
+      <textarea id="descricao" name="descricao" rows="5" placeholder="Descreva o que aconteceu..." required></textarea>
+
+      <button type="submit" class="botao alerta-grave">Enviar denúncia</button>
+    </form>
+
     <br>
-    <img src="desmatamento1.png" alt="Foco de desmatamento" style="max-width: 100%; border: 3px solid #c9a738; border-radius: 8px;">
-    <br><br>
-
-    <p class="descricao-monitoramento">
-      <strong>Atualização:</strong><br>
-      A equipe de fiscalização foi alertada às 10:40 do mesmo dia. As máquinas continuavam operando até 11:15, quando o drone perdeu o sinal devido à interferência eletromagnética. A denúncia foi enviada para o órgão ambiental estadual.
-    </p>
-
-    <br>
-    <img src="desmatamento2.png" alt="Área após 1 hora de operação" style="max-width: 100%; border: 3px solid #c9a738; border-radius: 8px;">
-    <br><br>
-
-    <a href="pagina-denuncia.html" class="botao alerta-grave">Fazer denúncia rápida</a>
-    <a href="index.html" class="botao">Voltar para o menu principal</a>
+    <a href="index.html" class="botao">Voltar ao menu principal</a>
   </div>
 
   <footer>
-    <p>&copy; 2025 - Projeto Agrinho | Monitoramento Ambiental com BIODRONE</p>
+    <p>&copy; 2025 - Projeto Agrinho | Canal de denúncia anônima BIODRONE</p>
   </footer>
 </body>
 </html>
+
